@@ -1,0 +1,126 @@
+/* CSS Stylesheet */
+
+/* ToDo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .root{
+    height: 100dvh;
+    width: 100dvw;
+  
+  }
+  main>article>aside{
+    background-color: black;
+    float:right;
+    width: 35%;
+    h2{
+      background-color: yellow;
+      padding: 0.5rem;
+    }
+    p{
+      padding: 1rem;
+      color: white;
+    }
+    blockquote{
+      padding: 3rem;
+      color: white;
+    }
+  }
+  article >section{
+    h2{
+      background-color: yellow;
+      display:inline-block;
+    }
+    p{
+      padding: 1rem;
+      border-left: solid 2px yellow;
+    }
+  }
+  article >section:nth-of-type(even){
+    margin-left: 20px;
+  }
+  header {
+    background-image: url('images/talking_heads-speaking_in_tongues.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center;
+  }
+  header >section {
+    background-color: rgba(00, 00, 00, 0.8);
+    width: 83%;  
+    padding: 0px 10px 0px 10px;
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+  }
+  header h1{
+    box-sizing: border-box;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2dvh;
+    padding: 1%;
+    
+  }
+  
+  section h1{
+    color: yellow;
+    background-color:transparent;
+    font-size: 5dvh;
+    text-align: left;
+  }
+  section img{
+    width: 25%;
+    float: right;
+    margin: 1rem;
+  }
+  
+  
+  header {
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+  }
+  
+  nav {
+    background-color: black;
+    text-align: center;
+    padding: 1%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 2dvh; 
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  section h2{
+    
+    color: black;
+  }
+  article{
+    margin: 2rem 5rem 2rem 5rem;
+  }
+  footer{
+    padding-top: 25px;
+    display: block;
+    clear: both;
+    font-size: small;
+  }

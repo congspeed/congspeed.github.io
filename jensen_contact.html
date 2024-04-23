@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="jensen.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="jensen.js"></script>
+</head>
+<header>
+    <div class="navbar">
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="jensen_main.html">Home</a></li>
+                <li><a href="jensen_html_cheatsheet.html">HTML</a></li>
+                <li><a href="jensen_css_cheatsheet.html">CSS</a></li>
+                <li><a href="jensen_js_cheatsheet.html">Javascript</a></li>
+                <li><a href="jensen_resume.html">Profile</a></li>
+                <li><a href="jensen_details.html">About Me</a></li>
+                <li><a href="jensen_contact.html">Contact</a></li>
+                <li><a href="jensen_projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="date-time" id="datetime"></div>
+<div class="container1">
+    <h2>Contact Me</h2>
+
+</div>
+<div>
+<div class="contact">
+    <form action="mailto:jdycastro@gmail.com" method="post" border="1">
+        <fieldset>
+            <legend>Contact Me</legend>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+    
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br>
+            
+            <label for="message">Write us a message:</label>
+            <textarea id="message" name="message" rows="10" cols="50" placeholder="Write your message here"></textarea><br>
+            <small>Characters left: <span id="charCount">500</span></small><br><br>
+            
+            <input type="submit" value="Submit" id="submitButton">
+        </fieldset>
+    </form>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=1839206815" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/smx1502" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/cod_congspeed/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCMAcNnBycXdqGjynwaMRfGA" target="_blank" class="fab fa-youtube"></a>
+        <!-- Add more social media links as needed -->
+    </div>
+</body>
+</html>

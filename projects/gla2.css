@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --unit-height: 100vh;
+  --unit-width: 100vw;
+  --unit1-height: calc(var(--unit-height) / 8);
+  --unit1-width: calc(var(--unit-width) / 7);
+  --unit2-height: calc(var(--unit-height) / 4);
+  --unit2-width: calc(var(--unit-width) *2 / 7);
+  --unit3-height: calc(var(--unit-height) / 2);
+  --unit3-width: calc(var(--unit-width) * 4 / 7);
+  --box-padding: 1vh;
+}
+
+
+#TopDiv1 {
+  display: flexbox;
+  flex-wrap: wrap;
+  background-color: #008000;
+  margin-top: -1em;
+  margin-left: -1vh;
+  padding: var(--box-padding);
+  min-height: min(var(--unit1-height), var(--unit1-width));
+  max-height: min(var(--unit1-height), var(--unit1-width));
+  min-width: calc(var(--unit-height));
+  max-width: calc(var(--unit-height));
+} 
+
+#TopDiv1 h1 {
+  color: blue;
+  text-align: left;
+  font-size: 5vh;
+  margin-top: -1vh;
+}
+
+#TopDiv1 p {
+  color: #4bf1f8;
+  text-align: left;
+  font-size: 2vh;
+  margin-top: -2vh;
+}
+
+#TopDiv2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  border: 1vh solid black;
+  padding: var(--box-padding);
+  min-height: min(var(--unit1-height), var(--unit1-width));
+  max-height: min(var(--unit1-height), var(--unit1-width));
+  min-width: min(var(--unit1-height), var(--unit1-width));
+  max-width: min(var(--unit1-height), var(--unit1-width));
+  margin-left: -1vh;
+}
+
+#TopDiv2 h1 {
+  text-align: center;
+  color: blue;
+  font-size: 5.5vh;
+  margin-top: -1vh;
+  margin-left: -1vh;
+  
+}
+
+#MidDiv1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #008000;
+  border: 2vh solid #FFC0CB;
+  padding: var(--box-padding);
+  min-height: min(var(--unit2-height), var(--unit2-width));
+  max-height: min(var(--unit2-height), var(--unit2-width));
+  min-width: min(var(--unit2-height), var(--unit2-width));
+  max-width: min(var(--unit2-height), var(--unit2-width));
+  margin-left: 11.5vh;
+}
+
+#MidDiv1 h1 {
+    color: blue;
+    text-align: left;
+    font-size: 5.5vh;
+    margin-top: 1.5vh;
+  }
+  
+
+#BottomDiv1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  border: 30px solid #FF00FF;
+  padding: var(--maxPadding);
+  min-height: min(var(--unit3-height), var(--unit3-width));
+  max-height: min(var(--unit3-height), var(--unit-width));
+  min-width: min(var(--unit3-height), var(--unit3-width));
+  max-width: min(var(--unit3-height), var(--unit3-width));
+  margin-left: 36.5vh;
+}
+
+#BottomDiv1 h1 {
+    color: #008000;
+    text-align: left;
+    font-size: 5vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+  }
+  

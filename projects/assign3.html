@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashier Calculator</title>
+  <link rel="stylesheet" href="assign3.css">
+  <script src="assign3.js"></script>    
+</head>
+<body>
+  <div class="container">
+    <div class="section-wrapper admin-section-wrapper">
+      <div class="section-header">
+        <h2>Admin</h2>
+      </div>
+      <div class="admin-section">
+        <div>
+          <label for="newProduct">New Product:</label>
+          <input type="text" id="newProduct">
+          <button onclick="addNewProduct()">Add Product</button>
+        </div>
+        <div>
+          <label for="existingProduct">Existing Product:</label>
+          <select id="existingProduct"></select>
+          <label for="price">Price:</label>
+          <input type="text" id="price">
+          <button onclick="setPrice()">Set Price</button>
+        </div>
+      </div>
+    </div>
+    <div class="section-wrapper checkout-section-wrapper">
+      <div class="section-header">
+        <h2>Checkout</h2>
+      </div>
+      <div class="checkout-section">
+        <button onclick="startNewTransaction()">New Transaction</button>
+        <div>
+          <label for="products">Products:</label>
+          <select id="products"></select>
+        </div>
+        <div class="num-buttons">
+          <button onclick="setUnits(1)">1</button>
+          <button onclick="setUnits(2)">2</button>
+          <button onclick="setUnits(3)">3</button>
+          <button onclick="setUnits(4)">4</button>
+          <button onclick="setUnits(5)">5</button>
+          <button onclick="setUnits(6)">6</button>
+          <button onclick="setUnits(7)">7</button>
+          <button onclick="setUnits(8)">8</button>
+          <button onclick="setUnits(9)">9</button>
+        </div>
+        <div>
+          <label for="unit">Unit:</label>
+          <input type="text" id="unit" readonly>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <button onclick="pay()">Pay</button>
+      </div>
+    </div>
+    <div class="section-wrapper receipt-section-wrapper">
+      <div class="section-header">
+        <h2>Receipt</h2>
+      </div>
+      <div class="receipt-section">
+        <!-- Receipt Template -->
+        <template id="receipt-template">
+            <h2>Receipt</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price per unit</th>
+                        <th>Quantity</th>
+                        <th>Total price</th>
+                    </tr>
+                </thead>
+                <tbody id="receipt-body">
+                </tbody>
+            </table>
+            <hr>
+            <p id="sub-total"></p>
+            <p id="tax"></p>
+            <p id="grand-total"></p>
+        </template>
+        
+        <div id="receipt"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

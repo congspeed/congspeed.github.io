@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .section-wrapper {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .section-header {
+    background-color: #f0f0f0; 
+    border: 1px solid black;
+    font-size: 2vh;
+  }
+  
+  .admin-section-wrapper {
+    background-color: #f0f0f0; 
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .checkout-section-wrapper {
+    background-color: #e0e0e0; 
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .receipt-section-wrapper {
+    background-color: #d0d0d0; 
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  table {
+    margin-left: 16%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    font-size: 2vh;
+  }
+  th, td {
+    border: 2px solid black; /* This property sets the border to 1px solid black */
+    padding: 8px; /* Padding to space out the content within cells */
+    background-color: white;
+  }
+  
+  .admin-section h2, .checkout-section h2, .receipt-section h2 {
+    margin-top: 0;
+  }
+  
+  .admin-section div, .checkout-section div, .receipt-section div {
+    margin-bottom: 10px;
+  }
+  
+  .admin-section div label, .checkout-section div label {
+    margin-right: 5px;
+  }
+  
+  .admin-section div select, .checkout-section div select {
+    margin-right: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100px;
+  }
+
+  .num-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .num-buttons button {
+    width: 100%;
+    padding: 10px;
+  }
+  

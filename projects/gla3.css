@@ -1,0 +1,33 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+#board {
+  height: 540px;
+  width: 270px;
+  background-color: blue;
+  border: 10px solid navy;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  height: 80px;
+  width: 80px;
+  margin: 3px;
+  margin-left: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.red-disc {
+  background-color: red;
+}
+
+.yellow-disc {
+  background-color: yellow;
+}
+
+
