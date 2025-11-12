@@ -1,318 +1,302 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url("gtr.jpg");
-    background-size: cover;
-    background-blend-mode:overlay;
-    background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("gtr.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar h1 {
-    margin-left: 60px;
-    
+  margin-left: 60px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, color 0.3s ease-in-out; 
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out,
+              transform 0.2s ease-in-out,
+              color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    background-color: #ffd700;
-    transform: scale(1.1);
-    color: #000; 
+  background-color: #ffd700;
+  transform: scale(1.1);
+  color: #000;
 }
-
 
 .container1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .container2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-}
 table {
-    text-align: left;
-    margin: 0 auto 20px;
-    padding: 0px;
-    background-color: white;
-    border-collapse: collapse;
-    width: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin: 0 auto 20px;
+  padding: 0px;
+  background-color: white;
+  border-collapse: collapse;
+  width: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-th, td{
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
 }
 
 #backgroundMusic {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 300px; 
-    text-align: center;
-    display: none;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  display: none;
+}
 
 #playStopButton {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100px;
-    text-align: center;
-    
-  }
-  
-  #playStopButton:hover {
-    background-color: #ffd700;
-    color: black;
-  }
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
 
-  .projects {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+#playStopButton:hover {
+  background-color: #ffd700;
+  color: black;
+}
 
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .projects a {
-    color: white; 
-    text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
 
 .projects a:hover {
-    color: white; 
+  color: white;
 }
 
 .contact {
-    max-width: 80vh;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+  max-width: 80vh;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .contact label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .contact input[type="text"],
 .contact input[type="email"],
 .contact input[type="tel"],
 .contact textarea {
-    width: 70vh;
-    padding:1%;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  width: 70vh;
+  padding: 1%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 .contact textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .contact small {
-    color: #888;
+  color: #888;
 }
 
 #charCount {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .negative {
-    color: red;
+  color: red;
 }
 
 .date-time {
-    position:absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 14px;
-    color: white;
-    padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: white;
+  padding: 20px;
 }
 
 .weather-container {
-    margin-top: 10px;
-    margin-left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    text-align: center;
-    float: left; 
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  float: left;
 }
 
 .news-container {
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 10px; 
-    margin: -685px 20px 20px 0; 
-    float: right; 
-    clear: both; 
-    width: 200px; 
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: -685px 20px 20px 0;
+  float: right;
+  clear: both;
+  width: 200px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.news-item1 img {
-    width: 21vh; 
-    height: auto; 
-    display:grid; 
-    margin-left: 7%; 
-
-}
-
-.news-item2 img {
-    width: 21vh; 
-    height: auto; 
-    display:grid; 
-    margin-left: 7%; 
-
-}
-
+.news-item1 img,
+.news-item2 img,
 .news-item3 img {
-    width: 21vh; 
-    height: auto; 
-    display:grid; 
-    margin-left: 7%; 
-
+  width: 21vh;
+  height: auto;
+  display: grid;
+  margin-left: 7%;
 }
 
 .social-icons {
-    position: fixed;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000; /* Ensure the icons are above other content */
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
 .social-icons a {
-    margin: 10px 10px;
-    font-size: 24px;
-    text-decoration: none;
+  margin: 10px 10px;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .social-icons .fab.fa-facebook {
-    color: #1877F2; /* Facebook blue */
+  color: #1877F2;
 }
 
 .social-icons .fab.fa-twitter {
-    color: #1da1f2; /* Twitter blue */
+  color: #1da1f2;
 }
 
 .social-icons .fab.fa-instagram {
-    color: #c13584; /* Instagram pink */
+  color: #c13584;
 }
 
 .social-icons .fab.fa-youtube {
-    color: #ff0000; /* YouTube red */
+  color: #ff0000;
 }
+
 .footer {
-    color: white;
-    position: aboslute;
-    margin-left:0vh;
+  color: white;
+  position: aboslute;
+  margin-left: 0vh;
 }
 
 legend {
-    color: white;
+  color: white;
 }
 
 .youtube_video {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .youtube_video iframe {
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 1%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    box-sizing:content-box;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: content-box;
 }
 
 .h1_video {
-    color: white;
-    text-align: center;
-    padding: 0;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #return-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px; /* Adjust this value as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    background-color: grey;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 #return-to-top:hover {
-    background-color: #ffd700;
-    color: black;
+  background-color: #ffd700;
+  color: black;
 }
-
