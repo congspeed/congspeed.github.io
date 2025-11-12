@@ -406,3 +406,101 @@ legend {
     font-size: 14px;
   }
 }
+
+/* ===== Mobile Fix Patch (stack layout & nav wrapping) ===== */
+@media (max-width: 768px) {
+
+  /* --- Header layout fix --- */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar h1 {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .date-time {
+    order: -1; /* date/time above title */
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  /* --- Nav fix --- */
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  /* --- Stack content blocks --- */
+  .weather-container,
+  .news-container {
+    float: none !important;
+    width: 95% !important;
+    margin: 10px auto !important;
+    display: block;
+    clear: both;
+  }
+
+  /* --- Fix overlapping forecast/news section --- */
+  .container1,
+  .container2,
+  .projects,
+  .contact {
+    width: 95%;
+    margin: 10px auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  /* --- Make iframe videos scale --- */
+  .youtube_video iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 6px 0;
+  }
+
+  .date-time {
+    font-size: 12px;
+  }
+
+  .weather-container,
+  .news-container {
+    width: 100% !important;
+  }
+}
+
+
