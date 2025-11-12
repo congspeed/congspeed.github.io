@@ -3,48 +3,32 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url("gtr.jpg") center center / cover no-repeat;
+  background: url("gtr.jpg") center center / cover no-repeat fixed;
   background-blend-mode: overlay;
-  background-attachment: scroll; /* changed from fixed for iPhone smoothness */
 }
 
-/* ===== Header ===== */
+/* ===== Header & Navbar ===== */
 header {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  text-align: center;
-  flex-wrap: wrap;
 }
 
-/* ===== Date & Time ===== */
-.date-time {
-  display: block;
-  position: static;
-  text-align: center;
-  font-size: 14px;
-  color: white;
-  padding: 5px;
-}
-
-/* ===== Navbar ===== */
 nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .navbar h1 {
-  margin-left: 60px;
+  margin-left: 20px;
+  font-size: 1.5rem;
   text-align: center;
-  font-size: 1.8rem;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -60,117 +44,65 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  padding: 10px;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, color 0.3s ease-in-out;
+  padding: 8px 12px;
   border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
   background-color: #ffd700;
-  transform: scale(1.05);
   color: #000;
+  transform: scale(1.05);
 }
 
 /* ===== Containers ===== */
-.container1 {
+.container1,
+.container2,
+.projects,
+.contact {
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+}
+
+.container1 {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .container2 {
-  max-width: 1200px;
-  margin: 10px auto;
-  padding: 20px;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
 }
 
-/* ===== Table ===== */
+.projects {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contact {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* ===== Tables ===== */
 table {
-  text-align: left;
-  margin: 0 auto 20px;
-  padding: 0;
-  background-color: white;
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 20px auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
+  font-size: 0.95rem;
 }
 
-/* ===== Audio Button ===== */
-#backgroundMusic {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 300px;
-  text-align: center;
-  display: none;
-}
-
-#playStopButton {
-  background-color: grey;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 100px;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-#playStopButton:hover {
-  background-color: #ffd700;
-  color: black;
-}
-
-/* ===== Projects Section ===== */
-.projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border-radius: 8px;
-}
-
-.projects a {
-  color: white;
-  text-decoration: none;
-}
-
-.projects a:hover {
-  color: white;
-}
-
-/* ===== Contact Section ===== */
-.contact {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border-radius: 8px;
-}
-
+/* ===== Contact Form ===== */
 .contact label {
   display: block;
   margin-bottom: 5px;
@@ -182,7 +114,7 @@ th, td {
 .contact textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-sizing: border-box;
@@ -204,39 +136,43 @@ th, td {
   color: red;
 }
 
-/* ===== Weather & News Containers ===== */
-.weather-container {
-  margin-top: 10px;
-  margin-left: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+/* ===== Floating Elements ===== */
+.date-time {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: white;
   padding: 10px;
+}
+
+.weather-container,
+.news-container {
+  width: 220px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 220px;
+  margin: 10px;
+}
+
+.weather-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
   text-align: center;
   float: left;
 }
 
 .news-container {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  margin: 10px 20px 20px 0;
-  float: right;
-  clear: both;
-  width: 220px;
-  text-align: center;
   color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  float: right;
 }
 
-.news-item1 img,
-.news-item2 img,
-.news-item3 img {
+.news-container img {
   width: 100%;
   height: auto;
-  display: grid;
-  margin: 0 auto;
+  border-radius: 4px;
 }
 
 /* ===== Social Icons ===== */
@@ -254,10 +190,11 @@ th, td {
   text-decoration: none;
 }
 
-.social-icons .fab.fa-facebook { color: #1877F2; }
-.social-icons .fab.fa-twitter { color: #1da1f2; }
-.social-icons .fab.fa-instagram { color: #c13584; }
-.social-icons .fab.fa-youtube { color: #ff0000; }
+/* Social brand colors */
+.social-icons .fa-facebook { color: #1877F2; }
+.social-icons .fa-twitter { color: #1da1f2; }
+.social-icons .fa-instagram { color: #c13584; }
+.social-icons .fa-youtube { color: #ff0000; }
 
 /* ===== Footer ===== */
 .footer {
@@ -266,11 +203,7 @@ th, td {
   padding: 20px;
 }
 
-legend {
-  color: white;
-}
-
-/* ===== YouTube Videos ===== */
+/* ===== Videos ===== */
 .youtube_video {
   text-align: center;
   display: flex;
@@ -282,10 +215,8 @@ legend {
 .youtube_video iframe {
   width: 100%;
   max-width: 560px;
-  aspect-ratio: 16 / 9;
-  margin-top: 10px;
+  aspect-ratio: 16/9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-sizing: content-box;
 }
 
 .h1_video {
@@ -296,25 +227,24 @@ legend {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* ===== Return to Top Button ===== */
+/* ===== Buttons ===== */
+#playStopButton,
 #return-to-top {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 99;
-  font-size: 16px;
+  background-color: grey;
+  color: white;
   padding: 10px 20px;
   border: none;
-  outline: none;
-  background-color: grey;
-  color: #fff;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   transition: background-color 0.3s, color 0.3s;
 }
 
+#playStopButton:hover,
 #return-to-top:hover {
   background-color: #ffd700;
   color: black;
@@ -322,22 +252,13 @@ legend {
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-  header {
-    text-align: center;
-  }
-
-  .navbar h1 {
-    margin-left: 0;
-    font-size: 1.4rem;
-  }
-
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 
   nav ul li {
-    margin: 8px 0;
+    margin: 10px 0;
   }
 
   .weather-container,
@@ -348,13 +269,14 @@ legend {
   }
 
   .youtube_video iframe {
+    width: 100%;
     max-width: 100%;
   }
 
-  .social-icons {
+  .date-time {
     position: static;
-    margin: 20px auto;
     text-align: center;
+    padding: 10px;
   }
 
   #playStopButton {
@@ -363,18 +285,19 @@ legend {
     display: block;
   }
 
-  table {
-    font-size: 0.9rem;
+  .social-icons {
+    position: static;
+    margin: 20px auto;
   }
 }
 
 @media (max-width: 480px) {
   header {
     text-align: center;
-    padding: 8px;
   }
 
   .navbar h1 {
+    margin-left: 0;
     font-size: 1.2rem;
   }
 
@@ -387,22 +310,14 @@ legend {
   .container2,
   .projects,
   .contact {
-    width: 95%;
     padding: 15px;
   }
 
-  .weather-container,
-  .news-container {
-    width: 95%;
+  table {
+    font-size: 0.85rem;
   }
 
   .youtube_video iframe {
     height: auto;
-  }
-
-  #return-to-top {
-    bottom: 10px;
-    padding: 8px 15px;
-    font-size: 14px;
   }
 }
